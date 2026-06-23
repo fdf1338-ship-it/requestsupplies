@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule - Request Supplies</title>
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<div class="app-layout">
+
+    <div class="sidebar">
+
+        <h2>Request Supplies</h2>
+
+        <a href="dashboard.html">
+            📊 Dashboard
+        </a>
+
+        <div class="menu-section">
+
+            <div class="menu-title">
+                📦 Requests
+            </div>
+
+            <div
+                class="menu-items"
+                style="display:none;"
+            >
+
+                <a href="requests.html">
+                    My Requests
+                </a>
+
+                <a href="manage-requests.html">
+                    Manage Requests
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="menu-section">
+
+            <div class="menu-title">
+                👥 Employees
+            </div>
+
+            <div
+                class="menu-items"
+                style="display:none;"
+            >
+
+                <a href="employees.html">
+                    Employees
+                </a>
+
+                <a href="employee-directory.html">
+                    Directory
+                </a>
+
+                <a href="roles.html">
+                    Roles
+                </a>
+
+            </div>
+
+        </div>
+
+        <a href="inventory.html">
+            📦 Inventory
+        </a>
+
+        <a href="schedule.html">
+            📅 Schedule
+        </a>
+
+        <a href="reports.html">
+            📈 Reports
+        </a>
+
+        <a href="notifications.html">
+            🔔 Notifications
+        </a>
+
+        <a href="settings.html">
+            ⚙️ Settings
+        </a>
+
+        <a href="admin.html">
+            🛠️ Admin Panel
+        </a>
+
+        <a href="profile.html">
+            👤 Profile
+        </a>
+
+    </div>
+
+    <div class="content">
+
+        <h1>Worker Schedule</h1>
+
+        <form id="scheduleForm">
+
+            <input
+                type="text"
+                id="employee"
+                placeholder="Employee Name"
+                required
+            >
+
+            <input
+                type="date"
+                id="date"
+                required
+            >
+
+            <input
+                type="time"
+                id="startTime"
+                required
+            >
+
+            <input
+                type="time"
+                id="endTime"
+                required
+            >
+
+            <button type="submit">
+                Create Shift
+            </button>
+
+        </form>
+
+        <div id="scheduleList"></div>
+
+    </div>
+
+</div>
+
+<script src="sidebar.js"></script>
+<script type="module" src="schedule.js"></script>
+
+</body>
+</html>
