@@ -1,0 +1,58 @@
+{
+    "employees": [
+      {
+        "employeeName": "John Smith",
+        "employeeEmail": "john@example.com",
+        "employeeRole": "Admin"
+      },
+      {
+        "employeeName": "Sarah Johnson",
+        "employeeEmail": "sarah@example.com",
+        "employeeRole": "Manager"
+      }
+    ],
+  
+    "inventory": [
+      {
+        "itemName": "Fire Extinguisher",
+        "itemQuantity": 25,
+        "minimumQuantity": 5,
+        "imageUrl": ""
+      },
+      {
+        "itemName": "Smoke Detector",
+        "itemQuantity": 50,
+        "minimumQuantity": 10,
+        "imageUrl": ""
+      }
+    ],
+  
+    "requests": [
+      {
+        "itemName": "Fire Extinguisher",
+        "quantity": 2,
+        "status": "Pending"
+      },
+      {
+        "itemName": "Smoke Detector",
+        "quantity": 5,
+        "status": "Approved"
+      }
+    ],
+  
+    "shifts": [
+      {
+        "employee": "John Smith",
+        "date": "2026-06-25",
+        "startTime": "09:00",
+        "endTime": "17:00"
+      }
+    ],
+  
+    "notifications": [
+      {
+        "title": "New Employee Added",
+        "message": "Sarah Johnson was added as Manager"
+      }
+    ]
+  }
