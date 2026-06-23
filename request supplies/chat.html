@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Chat - Request Supplies</title>
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+
+<div class="app-layout">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+        <h2>Request Supplies</h2>
+
+        <a href="dashboard.html">📊 Dashboard</a>
+        <a href="requests.html">📦 Requests</a>
+        <a href="inventory.html">📦 Inventory</a>
+        <a href="employees.html">👥 Employees</a>
+        <a href="schedule.html">📅 Schedule</a>
+        <a href="reports.html">📈 Reports</a>
+        <a href="notifications.html">🔔 Notifications</a>
+        <a href="chat.html">💬 Chat</a>
+        <a href="settings.html">⚙️ Settings</a>
+        <a href="admin.html">🛠️ Admin Panel</a>
+        <a href="profile.html">👤 Profile</a>
+
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+
+        <div class="chat-header">
+
+            <h1>💬 Company Chat</h1>
+
+            <div class="chat-status">
+                <span class="online-dot"></span>
+                Team Chat Online
+            </div>
+
+        </div>
+
+        <div class="chat-wrapper">
+
+            <div id="chatMessages">
+
+                <div class="chat-welcome">
+
+                    <h2>Welcome to Company Chat</h2>
+
+                    <p>
+                        Send messages to your team in real time.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="chat-input-area">
+
+                <input
+                    type="text"
+                    id="messageInput"
+                    placeholder="Type your message..."
+                    autocomplete="off"
+                >
+
+                <button
+                    id="sendMessageBtn"
+                    type="button"
+                >
+                    Send
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script type="module" src="chat.js"></script>
+
+</body>
+</html>

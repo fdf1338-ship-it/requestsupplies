@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="user-management.css">
+</head>
+<body>
+
+<div class="app-layout">
+
+    <div class="sidebar">
+
+        <h2>Request Supplies</h2>
+
+        <a href="dashboard.html">📊 Dashboard</a>
+        <a href="employees.html">👥 Employees</a>
+        <a href="inventory.html">📦 Inventory</a>
+        <a href="schedule.html">📅 Schedule</a>
+        <a href="reports.html">📈 Reports</a>
+        <a href="notifications.html">🔔 Notifications</a>
+        <a href="settings.html">⚙️ Settings</a>
+        <a href="admin.html">🛠️ Admin Panel</a>
+
+    </div>
+
+    <div class="content">
+
+        <div class="page-header">
+
+            <h1>
+                👥 User Management
+            </h1>
+
+            <p>
+                Manage users, roles, permissions, suspensions and passwords.
+            </p>
+
+        </div>
+
+        <div class="admin-toolbar">
+
+            <input
+                type="text"
+                id="userSearch"
+                placeholder="Search users..."
+            >
+
+        </div>
+
+        <div
+            id="usersList"
+            class="users-grid"
+        >
+
+            <div class="loading-card">
+                Loading users...
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="sidebar.js"></script>
+
+<script type="module" src="user-management.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Request Supplies</title>
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+
+<div class="app-layout">
+
+    <div class="sidebar">
+
+        <h2>Request Supplies</h2>
+
+        <a href="dashboard.html">📊 Dashboard</a>
+        <a href="requests.html">📦 Requests</a>
+        <a href="inventory.html">📦 Inventory</a>
+        <a href="employees.html">👥 Employees</a>
+        <a href="schedule.html">📅 Schedule</a>
+        <a href="reports.html">📈 Reports</a>
+        <a href="notifications.html">🔔 Notifications</a>
+        <a href="chat.html">💬 Chat</a>
+        <a href="settings.html">⚙️ Settings</a>
+        <a href="admin.html">🛠️ Admin Panel</a>
+        <a href="profile.html">👤 Profile</a>
+
+    </div>
+
+    <div class="content">
+
+        <h1>⚙️ Settings</h1>
+
+        <!-- ACCOUNT -->
+
+        <div class="settings-card">
+
+            <h2>👤 Account</h2>
+
+            <input
+                type="text"
+                id="displayName"
+                placeholder="Display Name"
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Email"
+                disabled
+            >
+
+            <input
+                type="text"
+                id="phone"
+                placeholder="Phone Number"
+            >
+
+        </div>
+
+        <!-- SECURITY -->
+
+        <div class="settings-card">
+
+            <h2>🔒 Security</h2>
+
+            <button id="changePasswordBtn">
+                Change Password
+            </button>
+
+            <button id="logoutBtn">
+                Sign Out
+            </button>
+
+        </div>
+
+        <!-- NOTIFICATIONS -->
+
+        <div class="settings-card">
+
+            <h2>🔔 Notifications</h2>
+
+            <label>
+                <input
+                    type="checkbox"
+                    id="emailNotifications"
+                >
+                Email Notifications
+            </label>
+
+            <label>
+                <input
+                    type="checkbox"
+                    id="inventoryAlerts"
+                >
+                Inventory Alerts
+            </label>
+
+            <label>
+                <input
+                    type="checkbox"
+                    id="chatNotifications"
+                >
+                Chat Notifications
+            </label>
+
+        </div>
+
+        <!-- APPEARANCE -->
+
+        <div class="settings-card">
+
+            <h2>🎨 Appearance</h2>
+
+            <label>
+                <input
+                    type="checkbox"
+                    id="darkMode"
+                >
+                Dark Mode
+            </label>
+
+        </div>
+
+        <!-- CHAT -->
+
+        <div class="settings-card">
+
+            <h2>💬 Chat Settings</h2>
+
+            <label>
+                <input
+                    type="checkbox"
+                    id="showOnlineStatus"
+                >
+                Show Online Status
+            </label>
+
+        </div>
+
+        <!-- PREFERENCES -->
+
+        <div class="settings-card">
+
+            <h2>🌎 Preferences</h2>
+
+            <select id="language">
+
+                <option value="en">
+                    English
+                </option>
+
+                <option value="es">
+                    Spanish
+                </option>
+
+            </select>
+
+        </div>
+
+        <button
+            id="saveSettingsBtn"
+            class="save-settings-btn"
+        >
+            Save Settings
+        </button>
+
+    </div>
+
+</div>
+
+<script src="sidebar.js"></script>
+<script type="module" src="settings.js"></script>
+
+</body>
+</html>
