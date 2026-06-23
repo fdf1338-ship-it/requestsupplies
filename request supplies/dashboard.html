@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Request Supplies</title>
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<div class="app-layout">
+
+    <div class="sidebar">
+
+        <h2>Request Supplies</h2>
+
+        <a href="dashboard.html">📊 Dashboard</a>
+
+        <div class="menu-section">
+
+            <div class="menu-title">
+                📦 Requests
+            </div>
+
+            <div class="menu-items" style="display:none;">
+
+                <a href="requests.html">
+                    My Requests
+                </a>
+
+                <a href="manage-requests.html">
+                    Manage Requests
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="menu-section">
+
+            <div class="menu-title">
+                👥 Employees
+            </div>
+
+            <div class="menu-items" style="display:none;">
+
+                <a href="employees.html">
+                    Employees
+                </a>
+
+                <a href="employee-directory.html">
+                    Directory
+                </a>
+
+                <a href="roles.html">
+                    Roles
+                </a>
+
+            </div>
+
+        </div>
+
+        <a href="inventory.html">📦 Inventory</a>
+        <a href="schedule.html">📅 Schedule</a>
+        <a href="reports.html">📈 Reports</a>
+        <a href="notifications.html">🔔 Notifications</a>
+        <a href="settings.html">⚙️ Settings</a>
+        <a href="admin.html">🛠️ Admin Panel</a>
+        <a href="profile.html">👤 Profile</a>
+
+    </div>
+
+    <div class="content">
+
+        <h1>Dashboard</h1>
+
+        <div class="stats-grid">
+
+            <div class="card">
+                <h3>Total Employees</h3>
+                <h1 id="employeeCount">0</h1>
+            </div>
+
+            <div class="card">
+                <h3>Total Inventory</h3>
+                <h1 id="inventoryCount">0</h1>
+            </div>
+
+            <div class="card">
+                <h3>Total Requests</h3>
+                <h1 id="requestCount">0</h1>
+            </div>
+
+            <div class="card">
+                <h3>Total Shifts</h3>
+                <h1 id="shiftCount">0</h1>
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Welcome</h2>
+
+            <p>
+                Manage employees, inventory,
+                requests, schedules, reports,
+                notifications, and company
+                operations from one place.
+            </p>
+
+            <div class="dashboard-actions">
+
+                <a href="employees.html">
+                    Add Employee
+                </a>
+
+                <a href="inventory.html">
+                    Manage Inventory
+                </a>
+
+                <a href="requests.html">
+                    View Requests
+                </a>
+
+                <a href="reports.html">
+                    Open Reports
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="dashboard-section">
+
+            <div class="card">
+
+                <h2>
+                    Recent Activity
+                </h2>
+
+                <div id="recentActivity">
+
+                    <div class="activity-item">
+                        Activity will appear here.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="dashboard-section">
+
+            <div class="card alert-card">
+
+                <h2>
+                    Low Stock Alerts
+                </h2>
+
+                <div id="lowStockList">
+
+                    <p>
+                        No low stock alerts.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="sidebar.js"></script>
+<script type="module" src="dashboard.js"></script>
+
+</body>
+</html>

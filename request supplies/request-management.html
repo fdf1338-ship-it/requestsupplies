@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Management</title>
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="request-management.css">
+</head>
+
+<body>
+
+    <div class="app-layout">
+
+        <div class="sidebar">
+
+            <h2>Request Supplies</h2>
+
+            <a href="dashboard.html">📊 Dashboard</a>
+            <a href="employees.html">👥 Employees</a>
+            <a href="inventory.html">📦 Inventory</a>
+            <a href="schedule.html">📅 Schedule</a>
+            <a href="reports.html">📈 Reports</a>
+            <a href="notifications.html">🔔 Notifications</a>
+            <a href="settings.html">⚙️ Settings</a>
+            <a href="admin.html">🛠️ Admin Panel</a>
+
+        </div>
+
+        <div class="content">
+
+            <div class="page-header">
+
+                <h1>📋 Request Management</h1>
+
+                <p>
+                    Approve, reject, edit and archive employee requests.
+                </p>
+
+            </div>
+
+            <div class="toolbar">
+
+                <input
+                    type="text"
+                    id="requestSearch"
+                    placeholder="Search requests..."
+                >
+
+            </div>
+
+            <div
+                id="requestsList"
+                class="requests-grid"
+            >
+
+                <div class="loading-card">
+                    Loading requests...
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="sidebar.js"></script>
+    <script type="module" src="request-management.js"></script>
+
+</body>
+
+</html>
